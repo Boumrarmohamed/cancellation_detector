@@ -1,0 +1,7 @@
+name: appointment_cancellation_detector
+conda_env: environment.yml
+entry_points:
+  main:
+    parameters:
+      model_type: {type: str, default: "LogisticRegression"}
+    command: "python appointment_cancellation_detector/train.py --model_type {model_type}"
